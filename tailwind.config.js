@@ -10,14 +10,11 @@ module.exports = {
   ],
   theme: {
     colors:{
-      "light-blue" : "#0066ff",
-      "dark-blue" : "#210099"
-    },
-    fontSize:{
-      "d-logo"  :  "4.375 rem",
-      "d-title" :  "3.125 rem",
-      "m-logo"  :  "2.5 rem",
-      "m-title" :  "2.813 rem",
+      "light-blue"  : "#0066ff",
+      "dark-blue"   : "#210099",
+      "bg-white"    : "#f8f8f8",
+      "txt-black"   : "#080808",
+      "txt-gray"    : "#969696"
     },
     extend: {},
   },
