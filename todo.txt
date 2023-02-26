@@ -1,0 +1,2 @@
+1. make the button - we should pass our function to it for using it
+2. make the input - we should pass our ref + add icons 
