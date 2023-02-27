@@ -3,14 +3,12 @@ import Image from "next/image";
 import { useState } from "react";
 import Button from "../../components/button/Button";
 import Input from "../../components/input/Input";
-import { FiMail } from "react-icons/fi";
-import { FiMap } from "react-icons/fi";
-import { BiLockAlt } from "react-icons/bi";
+import { FiMap, FiMail } from "react-icons/fi";
+import { BiLockAlt, BiLockOpenAlt } from "react-icons/bi";
 import { BsPerson } from "react-icons/bs";
 import { RxPerson } from "react-icons/rx";
-import { MdLocationOn } from "react-icons/md";
-import { BiLockOpenAlt } from "react-icons/bi";
 import { AiOutlinePhone } from "react-icons/ai";
+import { TbMapPin } from "react-icons/tb";
 
 export default function Auth() {
   const [isSigningIn, setIsSigningIn] = useState(true);
@@ -80,10 +78,7 @@ export default function Auth() {
               <h3 className="title text-bg-white text-3xl">
                 از قبل حساب دارید؟
               </h3>
-              <Button
-                text="ورود"
-                style="w-72 h-9 my-6 font-bold text-xl bg-gradient-to-r from-light-blue to-dark-blue"
-              />
+              <Button text="ورود" style="w-36 h-9 my-6 font-bold text-xl" />
             </div>
           </div>
           <div className="bg-bg-white text-center py-10">
@@ -107,7 +102,7 @@ export default function Auth() {
                 <FiMap size={20} />
               </Input>
               <Input text="شهر">
-                <MdLocationOn size={20} />
+                <TbMapPin size={20} />
               </Input>
               <Input text="ایمیل">
                 <FiMail size={20} />
