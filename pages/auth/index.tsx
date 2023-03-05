@@ -9,10 +9,12 @@ import { BsPerson } from "react-icons/bs";
 import { RxPerson } from "react-icons/rx";
 import { AiOutlinePhone } from "react-icons/ai";
 import { TbMapPin } from "react-icons/tb";
+import { useSelector, useDispatch } from "react-redux";
 
 export default function Auth() {
   const [isSigningIn, setIsSigningIn] = useState(true);
-
+  const selector = useSelector((user) => console.log(user))
+  console.log(selector)
   return (
     /* this is for computer desing */
     <div className="w-screen h-screen">
@@ -36,6 +38,7 @@ export default function Auth() {
             <Button
               text="ورود"
               style="w-72 h-9 font-bold text-xl bg-gradient-to-r from-light-blue to-dark-blue"
+              act={() => setIsSigningIn((current) => !current)}
             />
             <p className="mt-3 text-txt-gray cursor-pointer">
               رمز عبورم را فرموش کرده‌ام
@@ -55,7 +58,11 @@ export default function Auth() {
                 هنوز عضو نشده اید؟
               </h3>
               <div className="w-full h-auto mt-2">
-                <Button text={"ثبت نام"} style={"w-36 h-8 text-xl"} />
+                <Button
+                  text={"ثبت نام"}
+                  style={"w-36 h-8 text-xl"}
+                  act={() => setIsSigningIn((current) => !current)}
+                />
               </div>
             </div>
           </div>
@@ -78,15 +85,17 @@ export default function Auth() {
               <h3 className="title text-bg-white text-3xl">
                 از قبل حساب دارید؟
               </h3>
-              <Button text="ورود" style="w-36 h-9 my-6 font-bold text-xl" />
+              <Button
+                text="ورود"
+                style="w-36 h-9 my-6 font-bold text-xl"
+                act={() => setIsSigningIn((current) => !current)}
+              />
             </div>
           </div>
           <div className="bg-bg-white text-center py-10">
             <h3 className="title text-txt-black text-3xl">ثبت‌نام</h3>
             <div className="w-auto h-auto grid grid-cols-2 mx-48 title text-2xl my-9 border-2 border-txt-gray rounded-md overflow-hidden">
-              <button className="w-full h-10 bg-light-blue shadow text-bg-white px-4 rounded-md text-bg-whites">
-                کاربر
-              </button>
+              <button className={`w-full h-10 px-4 rounded-md`}>کاربر</button>
               <button className="w-full h-10 text-txt-gray px-4 rounded-md">
                 صاحب شغل
               </button>
@@ -120,6 +129,7 @@ export default function Auth() {
             <Button
               text="ثبت نام"
               style="w-72 h-12 my-11 font-bold text-xl bg-gradient-to-r from-light-blue to-dark-blue"
+              act={() => setIsSigningIn((current) => !current)}
             />
           </div>
         </div>

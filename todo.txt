@@ -1,7 +1,16 @@
+============== aslan
 1. buttons in (true and false) mode are not the same height
 2. design the body of about us page and add a good text (do not design nav and footer) + create a component for title becase we need to add color to background of it
 3. watch tailwind course to make the components responsive 
 4. use that clockify shit!
-4. use that clockify shit!
+
 
 your current push was good thanks :)
+
+
+============== mahyar
+user or owner buttion
+input transition
+redux is not complete
+footer
+header

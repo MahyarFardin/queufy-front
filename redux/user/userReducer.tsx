@@ -20,7 +20,7 @@ const initialuser: user = {
   email: "",
   number: 0,
   password: "",
-  userOrOwner: false,
+  userOrOwner: true, // true for user false for owner
   state: "",
   city: "",
   role: "",

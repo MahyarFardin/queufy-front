@@ -16,7 +16,8 @@
 
 @font-face {
   font-family: "iransans";
-  src: url("../fonts/Iransans/Iransans/IRANSansWeb_Medium.ttf") format("truetype"),
+  src: url("../fonts/Iransans/Iransans/IRANSansWeb_Medium.ttf")
+      format("truetype"),
     url("../fonts/Iransans/Iransans/IRANSansWeb_Medium.woff") format("woff"),
     url("../fonts/Iransans/Iransans/IRANSansWeb_Medium.woff2") format("woff2");
 }
@@ -26,14 +27,19 @@ html {
   font-family: iransans;
 }
 
-.logo{
-    font-family: pinar;
+.logo {
+  font-family: pinar;
 }
 
-.title{
-    font-family: lalezar;
+.title {
+  font-family: lalezar;
 }
 
-.shadow{
-  box-shadow: 0px 0px 10px #0066FF;
+.shadow {
+  box-shadow: 0px 0px 10px #0066ff;
+}
+
+.line {
+  border: 2px solid #f8f8f8;
+  width: 80%;
 }
