@@ -10,11 +10,16 @@ import { RxPerson } from "react-icons/rx";
 import { AiOutlinePhone } from "react-icons/ai";
 import { TbMapPin } from "react-icons/tb";
 import { useSelector, useDispatch } from "react-redux";
+import { login, logout, shift } from "../../redux/user/userSlicer";
+import { RootState } from "../../redux/store";
 
 export default function Auth() {
   const [isSigningIn, setIsSigningIn] = useState(true);
-  const selector = useSelector((user) => console.log(user))
-  console.log(selector)
+  const dispatch = useDispatch();
+  const selector = useSelector((user: RootState) => user.user.userOrOwner);
+  const theme = selector
+    ? ["bg-light-blue text-bg-white", "bg-white text-txt-gray"]
+    : ["bg-white text-txt-gray", "bg-light-blue text-bg-white"];
   return (
     /* this is for computer desing */
     <div className="w-screen h-screen">
@@ -95,8 +100,20 @@ export default function Auth() {
           <div className="bg-bg-white text-center py-10">
             <h3 className="title text-txt-black text-3xl">ثبت‌نام</h3>
             <div className="w-auto h-auto grid grid-cols-2 mx-48 title text-2xl my-9 border-2 border-txt-gray rounded-md overflow-hidden">
-              <button className={`w-full h-10 px-4 rounded-md`}>کاربر</button>
-              <button className="w-full h-10 text-txt-gray px-4 rounded-md">
+              <button
+                onClick={() =>
+                  dispatch(shift({ name: "userOrOwner", data: !selector }))
+                }
+                className={`w-full h-10 px-4 rounded-md duration-300 shadow ${theme[0]}`}
+              >
+                کاربر
+              </button>
+              <button
+                onClick={() =>
+                  dispatch(shift({ name: "userOrOwner", data: !selector }))
+                }
+                className={`w-full h-10 px-4 rounded-md duration-300 shadow ${theme[1]}`}
+              >
                 صاحب شغل
               </button>
             </div>
