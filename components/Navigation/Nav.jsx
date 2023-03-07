@@ -8,13 +8,19 @@ export default function Navigation() {
       <Logo addon="text-light-blue text-3xl" />
       <div className="w-full h-full flex flex-row justify-start px-6">
         <Link href="#">
-          <span className="text-txt-gray title px-10 text-lg hover:text-light-blue duration-700 ease-in-out transition active:text-light-blue">کیوفای چیه؟</span>
+          <span className="text-txt-gray title px-10 text-lg hover:text-light-blue duration-700 ease-in-out transition active:text-light-blue">
+            کیوفای چیه؟
+          </span>
         </Link>
         <Link href="#">
-          <span className="text-txt-gray title px-10 text-lg hover:text-light-blue duration-700 ease-in-out transition active:text-light-blue">درباره ما</span>
+          <span className="text-txt-gray title px-10 text-lg hover:text-light-blue duration-700 ease-in-out transition active:text-light-blue">
+            درباره ما
+          </span>
         </Link>
         <Link href="#">
-          <span className="text-txt-gray title px-10 text-lg hover:text-light-blue duration-700 ease-in-out transition active:text-light-blue">ارتباط با ما</span>
+          <span className="text-txt-gray title px-10 text-lg hover:text-light-blue duration-700 ease-in-out transition active:text-light-blue">
+            ارتباط با ما
+          </span>
         </Link>
       </div>
       <CgProfile size={30} className="text-txt-gray" />

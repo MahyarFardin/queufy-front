@@ -16,7 +16,7 @@ import { RootState } from "../../redux/store";
 export default function Auth() {
   const [isSigningIn, setIsSigningIn] = useState(true);
   const dispatch = useDispatch();
-  const selector = useSelector((user: RootState) => user.user.userOrOwner);
+  const selector = useSelector((user) => user.user.userOrOwner);
   const theme = selector
     ? ["bg-light-blue text-bg-white", "bg-white text-txt-gray"]
     : ["bg-white text-txt-gray", "bg-light-blue text-bg-white"];

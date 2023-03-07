@@ -1,7 +1,4 @@
-interface logoSetting {
-  addon:string
-}
-export default function Logo(props: logoSetting) {
+export default function Logo(props) {
   return (
     <span className={`logo text-bg-white ${props.addon}`}>کیوفای</span>
   );

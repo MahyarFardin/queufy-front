@@ -3,7 +3,7 @@ import { AiOutlinePhone, AiOutlineLinkedin, AiOutlineSend, AiOutlineMail } from 
 
 export default function Footer() {
   return (
-    <footer className="w-full h-auto bg-gradient-to-l from-light-blue to-dark-blue rounded-t-xl  px-6 py-6">
+    <footer className="w-full h-auto bg-gradient-to-l from-light-blue to-dark-blue rounded-t-xl  px-6 py-6 block">
       <div className="w-full h-full flex flex-row justify-center my-4">
         <Link href="#">
           <span className="text-bg-white title px-10 text-2xl hover:text-bg-white duration-700 ease-in-out transition active:text-light-blue">

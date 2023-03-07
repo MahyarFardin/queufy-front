@@ -19,6 +19,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "redux/user/userSlicer.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "redux/user/userSlicer.js", "pages/home/index.jsx", "pages/auth/index.jsx", "components/logo/logo.jsx"],
   "exclude": ["node_modules"]
 }
