@@ -30,15 +30,17 @@ export default function Auth() {
             <h3 className="title text-txt-black text-3xl my-20">
               ورود به حساب کاربری
             </h3>
-            <div className="w-full h-auto my-11">
-              <Input text="ایمیل">
-                <FiMail size={20} />
-              </Input>
-            </div>
-            <div className="w-full h-auto my-11">
-              <Input text="رمز عبور" type="password">
-                <BiLockAlt size={20} />
-              </Input>
+            <div className="w-11/12 mx-auto max-w-md">
+              <div className="w-full h-auto my-11">
+                <Input text="ایمیل">
+                  <FiMail size={20} />
+                </Input>
+              </div>
+              <div className="w-full h-auto my-11">
+                <Input text="رمز عبور" type="password">
+                  <BiLockAlt size={20} />
+                </Input>
+              </div>
             </div>
             <Button
               text="ورود"
@@ -99,7 +101,7 @@ export default function Auth() {
           </div>
           <div className="bg-bg-white text-center py-10">
             <h3 className="title text-txt-black text-3xl">ثبت‌نام</h3>
-            <div className="w-auto h-auto grid grid-cols-2 mx-48 title text-2xl my-9 border-2 border-txt-gray rounded-md overflow-hidden">
+            <div className="w-9/12 h-auto grid grid-cols-2 mx-auto title text-2xl my-9 border-2 border-txt-gray rounded-md overflow-hidden max-w-sm md:w-80">
               <button
                 onClick={() =>
                   dispatch(shift({ name: "userOrOwner", data: !selector }))
@@ -117,7 +119,7 @@ export default function Auth() {
                 صاحب شغل
               </button>
             </div>
-            <div className="w-full h-[55%] grid gap-2 px-16 md:grid-cols-2">
+            <div className="w-full h-[55%] grid gap-2 px-14 max-w-xl mx-auto md:grid-cols-2">
               <Input text="نام">
                 <RxPerson size={20} />
               </Input>
@@ -145,7 +147,7 @@ export default function Auth() {
             </div>
             <Button
               text="ثبت نام"
-              style="w-72 h-12 my-11 font-bold text-xl bg-gradient-to-r from-light-blue to-dark-blue"
+              style="w-72 h-9 my-11 font-bold text-xl bg-gradient-to-r from-light-blue to-dark-blue"
               act={() => setIsSigningIn((current) => !current)}
             />
           </div>
